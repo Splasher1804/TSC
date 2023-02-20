@@ -1,0 +1,1 @@
+Trebuie sa intalez ubuntu
