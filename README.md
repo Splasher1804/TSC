@@ -1,4 +1,4 @@
 Trebuie sa intalez ubuntu
 LAB 2: git status
 Modificare LAb
-pwd //afiseaza directorul curent
+pwd //afiseaza directorul curent s
