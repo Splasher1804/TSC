@@ -12,14 +12,16 @@ module instr_register_test
    output logic          reset_n,
    output operand_t      operand_a,
    output operand_t      operand_b,
+   //output result_t       result_rez,
    output opcode_t       opcode,
    output address_t      write_pointer,
    output address_t      read_pointer,
    input  instruction_t  instruction_word
   );
 
-  //timeunit 1ns/1ns;
+  timeunit 1ns/1ns;
 
+  result_t result_rez;
   int seed = 555;
 
   initial begin
@@ -74,7 +76,7 @@ module instr_register_test
     //
     static int temp = 0;
     operand_a     <= $random(seed)%16;                 // between -15 and 15
-    operand_b     <= $unsigned($random)%16;            // between 0 and 15
+    operand_b     <= $unsigned($random)%16;            // between 0 and 15                    
     opcode        <= opcode_t'($unsigned($random)%8);  // between 0 and 7, cast to opcode_t type
     write_pointer <= temp++;
   endfunction: randomize_transaction
@@ -84,6 +86,7 @@ module instr_register_test
     $display("  opcode = %0d (%s)", opcode, opcode.name);
     $display("  operand_a = %0d",   operand_a);
     $display("  operand_b = %0d\n", operand_b);
+    $display("  result_rez = %0d\n", result_rez);
   endfunction: print_transaction
 
   function void print_results;
@@ -91,6 +94,7 @@ module instr_register_test
     $display("  opcode = %0d (%s)", instruction_word.opc, instruction_word.opc.name);
     $display("  operand_a = %0d",   instruction_word.op_a);
     $display("  operand_b = %0d\n", instruction_word.op_b);
+    $display("  result_rez = %0d\n",instruction_word.rez);
   endfunction: print_results
 
 endmodule: instr_register_test

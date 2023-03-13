@@ -3,7 +3,7 @@
  **********************************************************************/
 
 module top;
- // timeunit 1ns/1ns;//directiva de compilator care seteaza timpul de simulare, rezolutia si timpul
+  timeunit 1ns/1ns;//directiva de compilator care seteaza timpul de simulare, rezolutia si timpul
 
   // user-defined types are defined in instr_register_pkg.sv
   import instr_register_pkg::*;
@@ -17,6 +17,7 @@ module top;
   logic          reset_n;
   opcode_t       opcode;
   operand_t      operand_a, operand_b;
+  //result_t       result_rez;
   address_t      write_pointer, read_pointer;
   instruction_t  instruction_word;
 
@@ -27,6 +28,7 @@ module top;
     .reset_n(reset_n),
     .operand_a(operand_a),
     .operand_b(operand_b),
+    //.result_rez(result_rez),
     .opcode(opcode),
     .write_pointer(write_pointer),
     .read_pointer(read_pointer),
@@ -40,6 +42,7 @@ module top;
     .reset_n(reset_n),
     .operand_a(operand_a),
     .operand_b(operand_b),
+    //.result_rez(result_rez),
     .opcode(opcode),
     .write_pointer(write_pointer),
     .read_pointer(read_pointer),

@@ -18,9 +18,10 @@ import instr_register_pkg::*;  // user-defined types are defined in instr_regist
  input  address_t      read_pointer,
  output instruction_t  instruction_word
 );
-  //timeunit 1ns/1ns;
+  timeunit 1ns/1ns;
 
   instruction_t  iw_reg [0:31];  // an array of instruction_word structures
+  result_t result_rez;
 
   // write to the register
   always@(posedge clk, negedge reset_n)   // write into register
@@ -29,7 +30,18 @@ import instr_register_pkg::*;  // user-defined types are defined in instr_regist
         iw_reg[i] = '{opc:ZERO,default:0};  // reset to all zeros
     end
     else if (load_en) begin
-      iw_reg[write_pointer] = '{opcode,operand_a,operand_b};
+    case(opcode)
+      ZERO : result_rez = 0;
+      PASSA: result_rez = operand_a;
+      PASSB: result_rez = operand_b;
+      ADD  : result_rez = operand_a + operand_b;
+      SUB  : result_rez = operand_a - operand_b;
+      MULT : result_rez = operand_a * operand_b;
+      DIV  : result_rez = operand_a / operand_b;
+      MOD  : result_rez = operand_a % operand_b;
+    endcase
+
+      iw_reg[write_pointer] = '{opcode,operand_a,operand_b, result_rez};
     end
 
   // read from the register
