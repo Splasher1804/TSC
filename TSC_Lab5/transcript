@@ -1,0 +1,23 @@
+# wrong # args: should be "llength list"
+# ambiguous command name "l": langOf lappend lassign lattice_edition lconcat lecho left lindex linsert linux_edition list llength load local log lrange lremove lrepeat lreplace lreverse lrmdups ls lsearch lset lshift lsort lsublist ltTime lteTime luniq
+# modelsim.ini  vish_stacktrace.vstf  wlft5f1avs  wlftcq9a50  wlftid3s6x  
+# ssh key.txt   vsim.wlf              wlft77vc1y  wlftcvv409  wlftjadvif  
+# transcript    wlft4g03jd            wlfta6y7rx  wlftegm99m              
+# 
+# lab3:
+# SystemVerilog for Verification - A Guide to Learning the Testbench Language Features 3rd edition.pdf  lab01_testbench-interface  lab_dut  mylog.txt  test                        
+# 
+# tools:
+# build.bat  clean.bat  run.do  run_test.bat  sources.txt  wave.do                
+# reading D:/Modelsim 10/modeltech/win32acoem/../modelsim.ini
+# build.bat  clean.bat  run.do  run_test.bat  sources.txt  wave.do                
+# ../../lab2/lab_dut/instr_register_pkg.sv   	                +incdir+../../lab_dut
+# ../../lab2/lab_dut/instr_register.sv   	                +incdir+../../lab_dut
+# 
+# 
+# ../lab02_clocking_blocks/top.sv                    +incdir+../lab02_clocking_blocks
+# 
+# Break key hit
+# 
+# <EOF>
+# Break key hit
