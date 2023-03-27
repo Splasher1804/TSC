@@ -1,0 +1,85 @@
+# modelsim.ini  vish_stacktrace.vstf  wlft5f1avs  wlftcq9a50  wlftid3s6x  
+# ssh key.txt   vsim.wlf              wlft77vc1y  wlftcvv409  wlftjadvif  
+# transcript    wlft4g03jd            wlfta6y7rx  wlftegm99m              
+# 
+# lab3:
+# SystemVerilog for Verification - A Guide to Learning the Testbench Language Features 3rd edition.pdf  lab01_testbench-interface  lab_dut  mylog.txt  test                        
+# 
+# sim:
+# run.do  sources.txt  transcript  wave.do                                  
+# 
+# tools:
+# build.bat  clean.bat  run.do  run_test.bat  sources.txt  transcript  wave.do          
+# reading D:/Modelsim 10/modeltech/win32acoem/../modelsim.ini
+# 
+# C:\Users\miumi\Desktop\TSC_Lab5\tools>call clean.bat 
+# 
+# C:\Users\miumi\Desktop\TSC_Lab5\tools>rmdir /S /Q ..\sim 
+# 
+# C:\Users\miumi\Desktop\TSC_Lab5\tools>mkdir ..\sim 
+# 
+# C:\Users\miumi\Desktop\TSC_Lab5\tools>call build.bat 
+# 
+# C:\Users\miumi\Desktop\TSC_Lab5\tools>mkdir                                       ..\sim 
+# 
+# C:\Users\miumi\Desktop\TSC_Lab5\tools>copy /Y run.do                              ..\sim 
+#         1 file(s) copied.
+# 
+# C:\Users\miumi\Desktop\TSC_Lab5\tools>copy /Y sources.txt                         ..\sim 
+#         1 file(s) copied.
+# 
+# C:\Users\miumi\Desktop\TSC_Lab5\tools>copy /Y wave.do                             ..\sim 
+#         1 file(s) copied.
+# 
+# C:\Users\miumi\Desktop\TSC_Lab5\tools>cd ../sim 
+# 
+# C:\Users\miumi\Desktop\TSC_Lab5\sim>vsim -gui -do "do run.do" 3 0 777 
+# A subdirectory or file ..\sim already exists.
+# 
+# C:\Users\miumi\Desktop\TSC_Lab5\tools>call clean.bat 
+# 
+# C:\Users\miumi\Desktop\TSC_Lab5\tools>rmdir /S /Q ..\sim 
+# 
+# C:\Users\miumi\Desktop\TSC_Lab5\tools>mkdir ..\sim 
+# 
+# C:\Users\miumi\Desktop\TSC_Lab5\tools>call build.bat 
+# 
+# C:\Users\miumi\Desktop\TSC_Lab5\tools>mkdir                                       ..\sim 
+# 
+# C:\Users\miumi\Desktop\TSC_Lab5\tools>copy /Y run.do                              ..\sim 
+#         1 file(s) copied.
+# 
+# C:\Users\miumi\Desktop\TSC_Lab5\tools>copy /Y sources.txt                         ..\sim 
+#         1 file(s) copied.
+# 
+# C:\Users\miumi\Desktop\TSC_Lab5\tools>copy /Y wave.do                             ..\sim 
+#         1 file(s) copied.
+# 
+# C:\Users\miumi\Desktop\TSC_Lab5\tools>cd ../sim 
+# 
+# C:\Users\miumi\Desktop\TSC_Lab5\sim>vsim -gui -do run.do 
+# A subdirectory or file ..\sim already exists.
+# 
+# C:\Users\miumi\Desktop\TSC_Lab5\tools>call clean.bat 
+# 
+# C:\Users\miumi\Desktop\TSC_Lab5\tools>rmdir /S /Q ..\sim 
+# 
+# C:\Users\miumi\Desktop\TSC_Lab5\tools>mkdir ..\sim 
+# 
+# C:\Users\miumi\Desktop\TSC_Lab5\tools>call build.bat 
+# 
+# C:\Users\miumi\Desktop\TSC_Lab5\tools>mkdir                                       ..\sim 
+# 
+# C:\Users\miumi\Desktop\TSC_Lab5\tools>copy /Y run.do                              ..\sim 
+#         1 file(s) copied.
+# 
+# C:\Users\miumi\Desktop\TSC_Lab5\tools>copy /Y sources.txt                         ..\sim 
+#         1 file(s) copied.
+# 
+# C:\Users\miumi\Desktop\TSC_Lab5\tools>copy /Y wave.do                             ..\sim 
+#         1 file(s) copied.
+# 
+# C:\Users\miumi\Desktop\TSC_Lab5\tools>cd ../sim 
+# 
+# C:\Users\miumi\Desktop\TSC_Lab5\sim>vsim -gui -do run.do 
+# A subdirectory or file ..\sim already exists.
