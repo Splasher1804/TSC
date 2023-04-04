@@ -21,9 +21,9 @@ if {$compile_on || [batch_mode] == 0}  {
 }
 
 # Load project 
-  eval vsim -novopt -quiet -nocoverage +notimingchecks +nowarnTSCALE -sva -g/top/test/no_of_transactions=$1 top
-  eval vsim -novopt -quiet -nocoverage +notimingchecks +nowarnTSCALE -sva -g/top/test/type_of_transaction=$2 top
-  eval vsim -novopt -quiet -nocoverage +notimingchecks +nowarnTSCALE -sva -g/top/test/seed=$3 top
+  eval vsim -novopt -quiet -nocoverage +notimingchecks +nowarnTSCALE -sva -g/top/test/no_of_transactions=$1 -g/top/test/type_of_transaction=$2 -g/top/test/seed=$3 top
+  #eval vsim -novopt -quiet -nocoverage +notimingchecks +nowarnTSCALE -sva -g/top/test/type_of_transaction=$2 top
+  #eval vsim -novopt -quiet -nocoverage +notimingchecks +nowarnTSCALE -sva -g/top/test/seed=$3 top
   
 # eval vsim -novopt -quiet -coverage +code=bcesft +notimingchecks +nowarnTSCALE -sva top
 
