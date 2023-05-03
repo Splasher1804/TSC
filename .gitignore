@@ -4,3 +4,5 @@ TSC_Lab3/vsim.wlf
 */work
 */vsim.wlf
 */sim
+*/modelsim.ini
+*/"ssh key.txt"
